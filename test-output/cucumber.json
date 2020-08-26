@@ -1,0 +1,370 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "User can select any language to learn on register",
+        "description": "",
+        "id": "application-functionality-test;user-can-select-any-language-to-learn-on-register",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 361858905,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is in application homepage",
+            "match": {
+              "location": "StepDefinition.user_is_in_application_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3453678310,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User Clicks on Register button",
+            "match": {
+              "location": "StepDefinition.user_Clicks_on_Register_button(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Page Header"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "What language do you want to learn?"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2254751686,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Verify user selects language to learn from different language options",
+            "match": {
+              "location": "StepDefinition.verify_user_selects_language_to_learn_from_different_language_options(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Language"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "German"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 167158242,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Verify register language page is opened with different learning options",
+            "match": {
+              "location": "StepDefinition.verify_register_language_page_is_opened_with_different_learning_options(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Page Header"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "Why are you learning German?"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7214954807,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Navigate back and verify language selection page is displayed and navigate back to homepage",
+            "match": {
+              "location": "StepDefinition.navigate_back_and_verify_language_selection_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "User can change display language",
+        "description": "",
+        "id": "application-functionality-test;user-can-change-display-language;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 87118985,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User is in application page",
+            "match": {
+              "location": "StepDefinition.verify_User_Is_Already_In_HomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5286147493,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Select display language as Italiano and verify selected language page https://it.babbel.com/?locale\u003dit is changed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Italiano",
+                  "offset": 27
+                },
+                {
+                  "val": "https://it.babbel.com/?locale\u003dit",
+                  "offset": 70
+                }
+              ],
+              "location": "StepDefinition.select_Display_Language_And_Verify_Selected_Language_Page_Changed(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3509918017,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Go back to home page and verify https://uk.babbel.com/ is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://uk.babbel.com/",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefinition.goBack_To_Home_Page_and_verify_page_is_displayed(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3526131662,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User selects German and click on get started",
+            "match": {
+              "arguments": [
+                {
+                  "val": "German",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefinition.user_selects_language_and_click_on_get_started(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 207744935,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User verify the language Why are you learning German? and all learning options",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Why are you learning German?",
+                  "offset": 25
+                }
+              ],
+              "location": "StepDefinition.user_verify_the_language_Why_are_you_learning_German_and_all_learning_options(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3340436264,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User navigate back to the home page",
+            "match": {
+              "location": "StepDefinition.user_navigate_back_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "User can change display language",
+        "description": "",
+        "id": "application-functionality-test;user-can-change-display-language;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 31075971,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User is in application page",
+            "match": {
+              "location": "StepDefinition.verify_User_Is_Already_In_HomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5036361851,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Select display language as Deutsch and verify selected language page https://de.babbel.com/?locale\u003dde is changed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Deutsch",
+                  "offset": 27
+                },
+                {
+                  "val": "https://de.babbel.com/?locale\u003dde",
+                  "offset": 69
+                }
+              ],
+              "location": "StepDefinition.select_Display_Language_And_Verify_Selected_Language_Page_Changed(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3433617148,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Go back to home page and verify https://uk.babbel.com/ is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://uk.babbel.com/",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefinition.goBack_To_Home_Page_and_verify_page_is_displayed(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3014760485,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User selects Italian and click on get started",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Italian",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefinition.user_selects_language_and_click_on_get_started(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 170992270,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User verify the language Why are you learning Italian? and all learning options",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Why are you learning Italian?",
+                  "offset": 25
+                }
+              ],
+              "location": "StepDefinition.user_verify_the_language_Why_are_you_learning_German_and_all_learning_options(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3308236963,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User navigate back to the home page",
+            "match": {
+              "location": "StepDefinition.user_navigate_back_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Application functionality test",
+    "description": "",
+    "id": "application-functionality-test",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/Application.feature"
+  }
+]
